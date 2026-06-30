@@ -12,10 +12,13 @@ Site personal realizat în HTML, CSS și JavaScript.
 - Site-ul funcționează.
 
  Link site
+ 
 https://mihai-fangli.github.io/Site-Personal/
 
  Link repository
+ 
 https://github.com/mihai-fangli/Site-Personal.git
 
 Contribuție
+
 Proiect realizat individual.
