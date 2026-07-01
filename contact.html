@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Personal | Acasă</title>
+    <title>Site Personal | Contact</title>
+
+    <!-- Fonturi -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="css/style.css">
+
+   
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -17,10 +21,10 @@
             <a href="index.html" class="logo">Mihai<span>F</span></a>
 
             <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link active">Acasă</a></li>
+                <li><a href="index.html" class="nav-link">Acasă</a></li>
                 <li><a href="about.html" class="nav-link">Despre</a></li>
                 <li><a href="hobbies.html" class="nav-link">Hobby-uri</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
             </ul>
 
             <button class="hamburger" aria-label="Meniu">
@@ -31,38 +35,33 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-bg"></div>
-        <div class="hero-pattern"></div>
+    <!-- Contact Section -->
+    <section class="section" style="padding-top:120px;">
+        <div class="container">
 
-        <div class="container hero-content">
-            <div class="hero-text">
-                <span class="hero-subtitle">Bine ai venit</span>
-                <h1 class="hero-title">Salut, sunt<br>Mihai Fangli</h1>
-
-                <p class="hero-description">
-                    Un pasionat de tehnologie și creație digitală.
-                    Explorează site-ul pentru a descoperi mai multe despre călătoria mea.
+            <div class="section-header">
+                <span class="section-label">Contact</span>
+                <h2 class="section-title">Hai să vorbim</h2>
+                <p class="section-description">
+                    Completează formularul de mai jos și voi reveni cu un răspuns cât de repede pot.
                 </p>
-
-                <div class="hero-buttons">
-                    <a href="about.html" class="btn btn-primary">Descoperă mai multe →</a>
-                    <a href="hobbies.html" class="btn btn-outline">Vezi hobby-urile mele</a>
-                </div>
             </div>
 
-            <div class="hero-image">
-                <div class="hero-img-container">
-                    <!-- AICI ESTE IMAGINEA TA -->
-                    <img src="img/mihai.jpg" alt="Mihai Fangli">
-                </div>
-            </div>
+            <form id="contact-form" class="contact-form">
+                <label for="name">Nume complet</label>
+                <input type="text" id="name" name="name" placeholder="Introdu numele tău">
+
+                <label for="email">Adresă de email</label>
+                <input type="email" id="email" name="email" placeholder="exemplu@email.com">
+
+                <label for="message">Mesajul tău</label>
+                <textarea id="message" name="message" rows="5" placeholder="Scrie mesajul aici..."></textarea>
+
+                <button type="submit">Trimite mesajul</button>
+            </form>
+
         </div>
     </section>
-
-    <!-- Stats Section (goală sau o poți șterge complet) -->
-    <section class="stats"></section>
 
     <!-- Footer -->
     <footer class="footer">
@@ -92,6 +91,7 @@
         </div>
     </footer>
 
+   
     <script src="js/script.js"></script>
 </body>
 </html>
